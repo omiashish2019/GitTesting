@@ -44,6 +44,13 @@ namespace GitTesting.Controllers
         }
 
         [HttpGet]
+        public IActionResult GetSum(int a,int b)
+        {
+            var response = a+b;
+            return Ok(response);
+        }
+
+        [HttpGet]
         public IActionResult GetStudent()
         {
             var response = DatatableToChartList();
