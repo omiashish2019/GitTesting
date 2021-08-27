@@ -31,5 +31,18 @@ namespace GitTesting.Controllers
         {
             return new string[] { "Sbi Feature", "Sbi Feature" };
         }
+
+        // Sbi Feature
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> MaxBupaGet()
+        {
+            return new string[] { "Max Feature", "Bupa Feature" };
+        }
+        // EGI Feature
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> EGIGet()
+        {
+            return new string[] { "EGI Feature", "EGI Feature" };
+        }
     }
 }
