@@ -17,6 +17,13 @@ namespace GitTesting.Controllers
         {
             return new string[] { "SBI", "SBI" };
         }
+        
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> GetPC()
+        {
+            return new string[] { "PC", "PC" };
+        }
+
 
         // GET api/values/5
         [HttpGet("{id}")]
