@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GitTesting.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class Feature1Controller : ControllerBase
     {
@@ -23,6 +23,13 @@ namespace GitTesting.Controllers
         public ActionResult<string> Get(int id)
         {
             return "value";
+        }
+
+        // Sbi Feature
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> SBIGet()
+        {
+            return new string[] { "Sbi Feature", "Sbi Feature" };
         }
     }
 }
