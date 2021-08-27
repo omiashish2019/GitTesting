@@ -17,6 +17,12 @@ namespace GitTesting.Controllers
         {
             return new string[] { "Feature1", "Feature1" };
         }
+        
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> GetFeature()
+        {
+            return new string[] { "Feature10", "Feature10" };
+        }
 
         // GET api/values/5
         [HttpGet("{id}")]
